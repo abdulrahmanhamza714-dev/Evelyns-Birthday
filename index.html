@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100a15">
+  <meta name="description" content="Isabella Operating System — a little birthday world created for Evelyn.">
+  <title>Isabella Operating System</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/real isabella.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/real isabella.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/real isabella.png">
+  <link rel="stylesheet" href="style.css">
+</head>ml lang="en">
+
+<body>
+
+<main id="app">
+
+<!-- ===================================================
+     BOOT SCREEN
+     =================================================== -->
+
+<section id="bootScreen" class="screen boot-screen active">
+
+  <div class="boot-background"></div>
+
+  <div class="boot-content">
+
+    <div class="boot-logo">
+
+      <div class="boot-ring"></div>
+
+      <img
+        src="images/real isabella.png"
+        alt="Isabella"
+        class="boot-bear"
+      >
+
+    </div>
+
+    <p class="boot-kicker">
+      ISABELLA OS
+    </p>
+
+    <h1 class="boot-title">
+      Starting Isabella<br>
+      Operating System...
+    </h1>
+
+    <p class="boot-subtitle">
+      Preparing Evelyn's birthday experience.
+    </p>
+
+    <div class="boot-progress">
+
+      <div
+        id="bootProgressBar"
+        class="boot-progress-bar"
+      ></div>
+
+    </div>
+
+    <p id="bootStatus" class="boot-status">
+      Initializing...
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ===================================================
+     INTRO SCREEN
+     =================================================== -->
+
+<section id="introScreen" class="screen intro-screen">
+
+  <div class="intro-background"></div>
+
+  <div class="intro-card">
+
+    <div class="intro-bear-wrap">
+
+      <div class="intro-bear-glow"></div>
+
+      <img
+        src="images/isabella with happy birthday sign.png"
+        alt="Isabella"
+        class="intro-bear"
+      >
+
+    </div>
+
+    <div class="intro-content">
+
+      <p class="intro-eyebrow">
+        A MESSAGE FROM ISABELLA
+      </p>
+
+      <h1 class="intro-title">
+        Hi Evelyn. 🐻❤️
+      </h1>
+
+      <p
+        id="introText"
+        class="intro-text"
+      >
+        I'm Isabella.
+        Well... the digital version of Isabella.
+        The original one may have gotten lost somewhere
+        in a car... 😭
+      </p>
+
+      <p class="intro-note">
+        Until she's found again, I'll be here
+        keeping the memories safe.
+      </p>
+
+      <div class="intro-actions">
+
+        <button
+          id="enterButton"
+          class="primary-button"
+          type="button"
+        >
+          Enter my little world
+          <span>→</span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===================================================
+     HOME SCREEN
+     =================================================== -->
+
+<section id="homeScreen" class="screen home-screen">
+
+  <div class="home-background"></div>
+
+  <div class="screen-shell">
+
+    <header class="home-topbar">
+
+      <div class="brand">
+
+        <div class="brand-mark">
+          🐻
+        </div>
+
+        <div class="brand-copy">
+          <strong>ISABELLA OS</strong>
+          <span>Birthday Edition</span>
+        </div>
+
+      </div>
+
+      <div
+        id="protocolPill"
+        class="protocol-pill"
+      >
+
+        <span class="protocol-dot"></span>
+
+        <span id="protocolText">
+          Birthday Protocol: PREPARING
+        </span>
+
+      </div>
+
+    </header>
+
+
+    <!-- HOME HERO -->
+
+    <section class="home-hero">
+
+      <div class="hero-glow"></div>
+
+      <div class="hero-content">
+
+        <p class="hero-kicker">
+          SEPTEMBER 19 • BIRTHDAY PROTOCOL
+        </p>
+
+        <h1 class="hero-title">
+          Happy Birthday,
+          <span>Evelyn.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Isabella has been preparing
+          something for you.
+        </p>
+
+        <div class="hero-actions">
+
+          <button
+            class="primary-button"
+            type="button"
+            data-section="birthday"
+          >
+            Open birthday file
+            <span>🎂</span>
+          </button>
+
+          <button
+            class="secondary-button"
+            type="button"
+            data-section="isabella"
+          >
+            Visit Isabella
+            <span>🐻</span>
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="hero-bear-wrap">
+
+        <div class="hero-bear-glow"></div>
+
+        <img
+          src="images/real isabella.png"
+          alt="Isabella the digital teddy bear"
+          class="hero-bear"
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- ISABELLA GUIDE -->
+
+    <section class="isabella-guide">
+
+      <div class="guide-bear">
+
+        <img
+          src="images/real isabella.png"
+          alt="Isabella"
+        >
+
+      </div>
+
+      <div class="guide-content">
+
+        <span class="guide-label">
+          ISABELLA SAYS
+        </span>
+
+        <p
+          id="guideText"
+          class="guide-text"
+        >
+          Evelyn... I have a lot planned for you. 👀
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- BIRTHDAY FEATURE -->
+
+    <section class="birthday-card">
+
+      <div class="birthday-card-glow"></div>
+
+      <div class="birthday-card-content">
+
+        <span class="birthday-card-badge">
+          🎂 BIRTHDAY FILE
+        </span>
+
+        <h2 class="birthday-card-title">
+          Today is officially
+          your day.
+        </h2>
+
+        <p class="birthday-card-text">
+          There is something waiting for you
+          inside the birthday room.
+        </p>
+
+        <button
+          class="text-button"
+          type="button"
+          data-section="birthday"
+        >
+          Open birthday file →
+        </button>
+
+      </div>
+
+      <div class="birthday-card-bear">
+
+        <img
+          src="images/isabella with happy birthday sign.png"
+          alt="Isabella holding the birthday file"
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- MAIN MENU -->
+
+    <section class="home-grid">
+
+      <button
+        class="menu-card"
+        type="button"
+        data-section="memories"
+      >
+
+        <div class="menu-icon">
+          📸
+        </div>
+
+        <div class="menu-copy">
+
+          <span class="menu-label">
+            ARCHIVE
+          </span>
+
+          <h3>
+            Memories
+          </h3>
+
+          <p>
+            Little moments worth remembering.
+          </p>
+
+        </div>
+
+        <span class="menu-arrow">
+          →
+        </span>
+
+      </button>
+
+
+      <button
+        class="menu-card"
+        type="button"
+        data-section="stories"
+      >
+
+        <div class="menu-icon">
+          📖
+        </div>
+
+        <div class="menu-copy">
+
+          <span class="menu-label">
+            STORY FILES
+          </span>
+
+          <h3>
+            Our Stories
+          </h3>
+
+          <p>
+            Some things deserve to be remembered.
+          </p>
+
+        </div>
+
+        <span class="menu-arrow">
+          →
+        </span>
+
+      </button>
+
+
+      <button
+        class="menu-card menu-card-featured"
+        type="button"
+        data-section="isabella"
+      >
+
+        <div class="menu-icon">
+          🐻
+        </div>
+
+        <div class="menu-copy">
+
+          <span class="menu-label">
+            PERSONAL SPACE
+          </span>
+
+          <h3>
+            Isabella's Room
+          </h3>
+
+          <p>
+            Come visit me. I have secrets.
+          </p>
+
+        </div>
+
+        <span class="menu-arrow">
+          →
+        </span>
+
+      </button>
+
+
+      <button
+        class="menu-card"
+        type="button"
+        data-section="birthday"
+      >
+
+        <div class="menu-icon">
+          🎂
+        </div>
+
+        <div class="menu-copy">
+
+          <span class="menu-label">
+            SPECIAL FILE
+          </span>
+
+          <h3>
+            Your Birthday
+          </h3>
+
+          <p>
+            Something made especially for today.
+          </p>
+
+        </div>
+
+        <span class="menu-arrow">
+          →
+        </span>
+
+      </button>
+
+    </section>
+
+
+    <footer class="home-footer">
+
+      <span>
+        Isabella OS
+      </span>
+
+      <span>
+        Made for Evelyn ❤️
+      </span>
+
+    </footer>
+
+  </div>
+
+</section>
+
+
+<!-- ===================================================
+     MEMORIES
+     =================================================== -->
+
+<section id="memoriesScreen" class="screen memories-screen">
+
+  <div class="screen-shell">
+
+    <header class="screen-header">
+
+      <button
+        id="memoriesBackButton"
+        class="back-button"
+        type="button"
+      >
+        ←
+      </button>
+
+      <div>
+
+        <span class="screen-kicker">
+          ISABELLA ARCHIVE
+        </span>
+
+        <h1>
+          Memories
+        </h1>
+
+      </div>
+
+    </header>
+
+
+    <div class="section-intro">
+
+      <p>
+        Some memories are photographs.
+        Some are just little pieces of time.
+      </p>
+
+    </div>
+
+
+    <div
+      id="memoryGrid"
+      class="memory-grid"
+    >
+
+
+      <!-- =================================================
+           MEMORY 01
+           ================================================= -->
+
+      <button
+        class="memory-card"
+        type="button"
+        data-memory="shs"
+      >
+
+        <div class="memory-card-image">
+
+          <!--
+            HTML PREVIEW IMAGE
+            JavaScript may replace the modal image later.
+          -->
+
+          <img
+            src="images/hamza x evelyn stadim.png"
+            alt="SHS memory"
+          >
+
+          <span class="memory-card-overlay">
+            Open
+          </span>
+
+        </div>
+
+        <div class="memory-card-content">
+
+          <span class="memory-card-category">
+            THE BEGINNING
+          </span>
+
+          <h3>
+            The Early Days
+          </h3>
+
+          <p>
+            Before we knew how important
+            some moments would become.
+          </p>
+
+          <span class="memory-card-arrow">
+            →
+          </span>
+
+        </div>
+
+      </button>
+
+
+      <!-- =================================================
+           MEMORY 02
+           ================================================= -->
+
+      <button
+        class="memory-card"
+        type="button"
+        data-memory="random"
+      >
+
+        <div class="memory-card-image">
+
+          <img
+            src="images/adgass group pic with Evelyn.jpg"
+            alt="A memory with Evelyn"
+          >
+
+          <span class="memory-card-overlay">
+            Open
+          </span>
+
+        </div>
+
+        <div class="memory-card-content">
+
+          <span class="memory-card-category">
+            LITTLE THINGS
+          </span>
+
+          <h3>
+            The Random Moments
+          </h3>
+
+          <p>
+            The tiny things that somehow
+            stayed in the archive.
+          </p>
+
+          <span class="memory-card-arrow">
+            →
+          </span>
+
+        </div>
+
+      </button>
+
+
+      <!-- =================================================
+           MEMORY 03
+           ================================================= -->
+
+      <button
+        class="memory-card"
+        type="button"
+        data-memory="stories"
+      >
+
+        <div class="memory-card-image">
+
+          <img
+            src="images/adgass group pic with Evelyn 2.jpg"
+            alt="Stories and memories with Evelyn"
+          >
+
+          <span class="memory-card-overlay">
+            Open
+          </span>
+
+        </div>
+
+        <div class="memory-card-content">
+
+          <span class="memory-card-category">
+            OUR STORIES
+          </span>
+
+          <h3>
+            The Worlds We Created
+          </h3>
+
+          <p>
+            Characters, ideas and stories
+            that belonged to us.
+          </p>
+
+          <span class="memory-card-arrow">
+            →
+          </span>
+
+        </div>
+
+      </button>
+
+
+      <!-- =================================================
+           MEMORY 04
+           ================================================= -->
+
+      <button
+        class="memory-card"
+        type="button"
+        data-memory="missing"
+      >
+
+        <div class="memory-card-image">
+
+          <img
+            src="images/Isabella image real.jpg"
+            alt="A memory from the archive"
+          >
+
+          <span class="memory-card-overlay">
+            Open
+          </span>
+
+        </div>
+
+        <div class="memory-card-content">
+
+          <span class="memory-card-category">
+            CLASSIFIED
+          </span>
+
+          <h3>
+            One More Thing
+          </h3>
+
+          <p>
+            Isabella says this file is
+            slightly dangerous.
+          </p>
+
+          <span class="memory-card-arrow">
+            →
+          </span>
+
+        </div>
+
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===================================================
+     ISABELLA ROOM
+     =================================================== -->
+
+<section id="roomScreen" class="screen room-screen">
+
+  <div class="room-stage">
+
+    <div class="room-background">
+
+      <img
+        src="images/Isabella image real.jpg"
+        alt="Isabella's room"
+      >
+
+    </div>
+
+    <div class="room-overlay"></div>
+
+
+    <header class="room-header">
+
+      <button
+        id="roomBackButton"
+        class="back-button room-back"
+        type="button"
+      >
+        ←
+      </button>
+
+      <div class="room-title">
+
+        <span>
+          ISABELLA OS
+        </span>
+
+        <strong>
+          Isabella's Room
+        </strong>
+
+      </div>
+
+      <div class="room-status">
+
+        <span class="room-status-dot"></span>
+        ONLINE
+
+      </div>
+
+    </header>
+
+
+    <div
+      class="room-stars"
+      aria-hidden="true"
+    >
+
+      <span>✦</span>
+      <span>·</span>
+      <span>✧</span>
+      <span>·</span>
+      <span>✦</span>
+
+    </div>
+
+
+    <!-- ISABELLA -->
+
+    <button
+      id="roomBear"
+      class="room-bear"
+      type="button"
+      aria-label="Talk to Isabella"
+    >
+
+      <span class="room-bear-glow"></span>
+
+      <img
+        src="images/real isabella.png"
+        alt="Isabella"
+      >
+
+      <span class="bear-spark spark-one">
+        ✦
+      </span>
+
+      <span class="bear-spark spark-two">
+        ✧
+      </span>
+
+    </button>
+
+
+    <!-- DIALOGUE -->
+
+    <div class="room-dialogue">
+
+      <div class="dialogue-label">
+
+        <span class="dialogue-dot"></span>
+        ISABELLA
+
+      </div>
+
+      <p
+        id="dialogueText"
+        class="dialogue-text"
+      >
+        Hi Evelyn. You finally came to visit me. 🥹
+      </p>
+
+      <div class="dialogue-actions">
+
+        <button
+          id="talkButton"
+          class="room-action-button"
+          type="button"
+        >
+          <span>💬</span>
+          Talk to Isabella
+        </button>
+
+        <button
+          id="secretButton"
+          class="room-action-button secondary"
+          type="button"
+        >
+          <span>✨</span>
+          Secret
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         ROOM OBJECTS
+         ================================================= -->
+
+
+    <!-- MEMORY BOX -->
+
+    <button
+      class="room-object memory-box-object"
+      type="button"
+      data-room-object="memory-box"
+      aria-label="Memory Box"
+    >
+
+      <span class="object-glow"></span>
+
+      <span class="object-icon">
+        📦
+      </span>
+
+      <span class="object-label">
+        Memory Box
+      </span>
+
+      <span class="object-hint">
+        Memories
+      </span>
+
+    </button>
+
+
+    <!-- BED -->
+
+    <button
+      class="room-object bed-object"
+      type="button"
+      data-room-object="bed"
+      aria-label="Isabella's bed"
+    >
+
+      <span class="object-icon">
+        🛏️
+      </span>
+
+      <span class="object-label">
+        Isabella's Bed
+      </span>
+
+    </button>
+
+
+    <!-- PHOTO -->
+
+    <button
+      class="room-object photo-object"
+      type="button"
+      data-room-object="photo"
+      aria-label="Photo frame"
+    >
+
+      <span class="object-icon">
+        🖼️
+      </span>
+
+      <span class="object-label">
+        Photo
+      </span>
+
+    </button>
+
+
+    <!-- NOTEBOOK -->
+
+    <button
+      class="room-object notebook-object"
+      type="button"
+      data-room-object="notebook"
+      aria-label="Isabella's notebook"
+    >
+
+      <span class="object-icon">
+        📔
+      </span>
+
+      <span class="object-label">
+        Notebook
+      </span>
+
+    </button>
+
+
+    <!-- LOCKED DRAWER -->
+
+    <button
+      id="lockedDrawer"
+      class="room-object drawer-object locked"
+      type="button"
+      data-room-object="drawer"
+      aria-label="Locked drawer"
+    >
+
+      <span class="object-lock">
+        🔒
+      </span>
+
+      <span class="object-label">
+        Locked Drawer
+      </span>
+
+      <span class="object-hint">
+        Classified
+      </span>
+
+    </button>
+
+
+    <!-- MISSING TEDDY -->
+
+    <button
+      class="room-object missing-object"
+      type="button"
+      data-room-object="missing"
+      aria-label="Missing Isabella notice"
+    >
+
+      <span class="object-icon">
+        📋
+      </span>
+
+      <span class="object-label">
+        Missing Teddy?
+      </span>
+
+    </button>
+
+
+    <!-- =================================================
+         ROOM BOTTOM BAR
+         ================================================= -->
+
+    <div class="room-bottom-bar">
+
+      <button
+        id="roomArchiveButton"
+        class="room-bottom-button"
+        type="button"
+      >
+        <span>📖</span>
+        Archive
+      </button>
+
+      <div class="room-room-name">
+
+        <span>
+          ISABELLA'S ROOM
+        </span>
+
+        <small>
+          Private Space
+        </small>
+
+      </div>
+
+      <button
+        id="roomSecretButton"
+        class="room-bottom-button"
+        type="button"
+      >
+        <span>🔐</span>
+        Secrets
+      </button>
+
+    </div>
+
+
+    <!-- =================================================
+         ROOM DISCOVERY
+         ================================================= -->
+
+    <div
+      id="roomDiscovery"
+      class="room-discovery"
+      aria-live="polite"
+    >
+
+      <span class="discovery-icon">
+        ✨
+      </span>
+
+      <div>
+
+        <strong>
+          Something happened...
+        </strong>
+
+        <p id="roomDiscoveryText">
+          You discovered something new.
+        </p>
+
+      </div>
+
+      <button
+        id="roomDiscoveryClose"
+        type="button"
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===================================================
+     STORIES
+     =================================================== -->
+
+<section id="storiesScreen" class="screen stories-screen">
+
+  <div class="screen-shell">
+
+    <header class="screen-header">
+
+      <button
+        id="storiesBackButton"
+        class="back-button"
+        type="button"
+      >
+        ←
+      </button>
+
+      <div>
+
+        <span class="screen-kicker">
+          RECOVERED FILES
+        </span>
+
+        <h1>
+          Our Stories
+        </h1>
+
+      </div>
+
+    </header>
+
+
+    <div class="section-intro">
+
+      <p>
+        Some things are worth remembering
+        even when the years keep moving.
+      </p>
+
+    </div>
+
+
+    <div
+      id="storyList"
+      class="story-list"
+    >
+
+
+      <!-- STORY 01 -->
+
+      <button
+        class="story-card"
+        type="button"
+        data-story="story1"
+      >
+
+        <div class="story-number">
+          01
+        </div>
+
+        <div class="story-icon">
+          🌱
+        </div>
+
+        <div class="story-content">
+
+          <span class="story-category">
+            THE EARLY DAYS
+          </span>
+
+          <h2>
+            The Beginning
+          </h2>
+
+          <p>
+            When Evelyn joined Science 1,
+            she was the quiet, shy girl
+            who had come into the class from S5.
+            This was where the friendship began.
+          </p>
+
+        </div>
+
+        <span class="story-arrow">
+          →
+        </span>
+
+      </button>
+
+
+      <!-- STORY 02 -->
+
+      <button
+        class="story-card"
+        type="button"
+        data-story="story2"
+      >
+
+        <div class="story-number">
+          02
+        </div>
+
+        <div class="story-icon">
+          🫶
+        </div>
+
+        <div class="story-content">
+
+          <span class="story-category">
+            FRIENDSHIP
+          </span>
+
+          <h2>
+            Somewhere Between Friends
+          </h2>
+
+          <p>
+            After SHS, distance changed the
+            way the friendship existed, but
+            it didn't erase what had been built.
+          </p>
+
+        </div>
+
+        <span class="story-arrow">
+          →
+        </span>
+
+      </button>
+
+
+      <!-- STORY 03 -->
+
+      <button
+        class="story-card"
+        type="button"
+        data-story="story3"
+      >
+
+        <div class="story-number">
+          03
+        </div>
+
+        <div class="story-icon">
+          ✍️
+        </div>
+
+        <div class="story-content">
+
+          <span class="story-category">
+            CLASSIFIED
+          </span>
+
+          <h2>
+            The Stories We Made
+          </h2>
+
+          <p>
+            Some memories stay because of
+            the small details and ordinary
+            moments surrounding them.
+          </p>
+
+        </div>
+
+        <span class="story-arrow">
+          →
+        </span>
+
+      </button>
+
+
+      <!-- STORY 04 -->
+
+      <button
+        class="story-card"
+        type="button"
+        data-story="story4"
+      >
+
+        <div class="story-number">
+          04
+        </div>
+
+        <div class="story-icon">
+          ✨
+        </div>
+
+        <div class="story-content">
+
+          <span class="story-category">
+            MEMORY FRAGMENTS
+          </span>
+
+          <h2>
+            The Little Things
+          </h2>
+
+          <p>
+            Smiles, expressions, jokes and
+            tiny moments that became memories.
+          </p>
+
+        </div>
+
+        <span class="story-arrow">
+          →
+        </span>
+
+      </button>
+
+
+      <!-- STORY 05 -->
+
+      <button
+        class="story-card"
+        type="button"
+        data-story="story5"
+      >
+
+        <div class="story-number">
+          05
+        </div>
+
+        <div class="story-icon">
+          🔐
+        </div>
+
+        <div class="story-content">
+
+          <span class="story-category">
+            RESTRICTED
+          </span>
+
+          <h2>
+            The Unspoken File
+          </h2>
+
+          <p>
+            Some things don't need a long
+            explanation to be meaningful.
+          </p>
+
+        </div>
+
+        <span class="story-arrow">
+          →
+        </span>
+
+      </button>
+
+
+      <!-- STORY 06 -->
+
+      <button
+        class="story-card"
+        type="button"
+        data-story="story6"
+      >
+
+        <div class="story-number">
+          06
+        </div>
+
+        <div class="story-icon">
+          🧸
+        </div>
+
+        <div class="story-content">
+
+          <span class="story-category">
+            ISABELLA INCIDENT
+          </span>
+
+          <h2>
+            The Teddy Called Isabella
+          </h2>
+
+          <p>
+            The red teddy that was lost in a car
+            eventually became the inspiration
+            for the digital Isabella.
+          </p>
+
+        </div>
+
+        <span class="story-arrow">
+          →
+        </span>
+
+      </button>
+
+
+      <!-- STORY 07 -->
+
+      <button
+        class="story-card"
+        type="button"
+        data-story="story7"
+      >
+
+        <div class="story-number">
+          07
+        </div>
+
+        <div class="story-icon">
+          🌍
+        </div>
+
+        <div class="story-content">
+
+          <span class="story-category">
+            MEMORY ARCHIVE
+          </span>
+
+          <h2>
+            Distance Didn't Delete Anything
+          </h2>
+
+          <p>
+            180 kilometres changed the routine,
+            but the friendship continued through
+            messages, calls and meetings.
+          </p>
+
+        </div>
+
+        <span class="story-arrow">
+          →
+        </span>
+
+      </button>
+
+
+      <!-- STORY 08 -->
+
+      <button
+        class="story-card story-card-final"
+        type="button"
+        data-story="story8"
+      >
+
+        <div class="story-number">
+          08
+        </div>
+
+        <div class="story-icon">
+          ❤️
+        </div>
+
+        <div class="story-content">
+
+          <span class="story-category">
+            CORE SYSTEM FILE
+          </span>
+
+          <h2>
+            Why This Little World Exists
+          </h2>
+
+          <p>
+            A birthday gift built from memories,
+            Isabella, and a lot of thought.
+          </p>
+
+        </div>
+
+        <span class="story-arrow">
+          →
+        </span>
+
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===================================================
+     BIRTHDAY
+     =================================================== -->
+
+<section id="birthdayScreen" class="screen birthday-screen">
+
+  <div class="birthday-stage">
+
+    <div
+      class="birthday-stars"
+      aria-hidden="true"
+    ></div>
+
+    <div class="birthday-glow"></div>
+
+
+    <button
+      id="birthdayBackButton"
+      class="back-button birthday-back"
+      type="button"
+    >
+      ←
+    </button>
+
+
+    <div class="birthday-card-main">
+
+
+      <!-- BIRTHDAY BEAR -->
+
+      <div class="birthday-bear">
+
+        <div class="birthday-bear-glow"></div>
+
+        <img
+          src="images/real isabella.png"
+          alt="Isabella"
+        >
+
+      </div>
+
+
+      <p class="birthday-kicker">
+        🎂 BIRTHDAY PROTOCOL
+      </p>
+
+
+      <h1 class="birthday-title">
+        Happy Birthday,
+        <span>Evelyn.</span>
+      </h1>
+
+
+      <div class="birthday-divider">
+
+        <span></span>
+        <span>♥</span>
+        <span></span>
+
+      </div>
+
+
+      <!-- LOCKED BIRTHDAY FILE -->
+
+      <div
+        id="birthdayLock"
+        class="birthday-lock"
+      >
+
+        <div class="birthday-lock-icon">
+          🔐
+        </div>
+
+        <h2>
+          Isabella has one final file.
+        </h2>
+
+        <p>
+          But apparently, she wants you
+          to explore her room first.
+        </p>
+
+        <button
+          id="unlockBirthday"
+          class="wish-button"
+          type="button"
+        >
+          Try to unlock it
+          <span>→</span>
+        </button>
+
+      </div>
+
+
+      <!-- FINAL BIRTHDAY FILE -->
+
+      <div
+        id="birthdayFinal"
+        class="birthday-final"
+        hidden
+      >
+
+        <div class="birthday-surprise-heading">
+
+          <span class="birthday-surprise-icon">
+            🎁
+          </span>
+
+          <span class="birthday-surprise-label">
+            SURPRISE FILE OPENED
+          </span>
+
+          <h2>
+            This one is for you.
+          </h2>
+
+        </div>
+
+
+        <!-- BIRTHDAY MESSAGE -->
+
+        <p
+          id="birthdayMessage"
+          class="birthday-message"
+        >
+          Evelyn,
+
+          <br><br>
+
+          I hope today gives you a reason
+          to smile a little more than usual.
+
+          <br><br>
+
+          I hope you get reminded that you
+          are appreciated, remembered,
+          and loved by the people around you.
+
+          <br><br>
+
+          And I hope this tiny world made
+          you smile at least once.
+
+          <br><br>
+
+          Happy Birthday. 🎂❤️
+        </p>
+
+
+        <p class="birthday-signature">
+          — Isabella 🐻
+        </p>
+
+
+        <!-- MAKE A WISH -->
+
+        <button
+          id="makeWishButton"
+          class="wish-button"
+          type="button"
+        >
+          Make a wish ✨
+        </button>
+
+
+        <!-- =================================================
+             BIRTHDAY SONGS
+             ================================================= -->
+
+        <div
+          id="birthdaySongs"
+          class="birthday-songs"
+        >
+
+          <div class="songs-heading">
+
+            <span class="songs-kicker">
+              ISABELLA'S PLAYLIST
+            </span>
+
+            <h2>
+              Songs for Evelyn 🎵
+            </h2>
+
+            <p>
+              Two little songs made especially
+              for this birthday.
+            </p>
+
+          </div>
+
+
+          <!-- SONG 01 -->
+
+          <div
+            class="song-card song-card-featured"
+            data-song-id="birthday"
+            data-song-url="https://suno.com/s/oskO71P4tGUEwqMf"
+          >
+
+            <div class="song-number">
+              01
+            </div>
+
+            <div
+              class="song-icon"
+              aria-hidden="true"
+            >
+              🎂
+            </div>
+
+            <div class="song-info">
+
+              <span class="song-label">
+                BIRTHDAY SONG
+              </span>
+
+              <h3>
+                Happy Birthday Evelyn
+              </h3>
+
+              <p>
+                by Hamza
+              </p>
+
+            </div>
+
+            <button
+              id="playBirthdaySong"
+              class="song-play-button"
+              type="button"
+              data-song-id="birthday"
+              data-song-url="https://suno.com/s/oskO71P4tGUEwqMf"
+            >
+              <span>▶</span>
+              Listen
+            </button>
+
+          </div>
+
+
+          <!-- SONG 02 -->
+
+          <div
+            class="song-card"
+            data-song-id="story"
+            data-song-url="https://suno.com/s/hliMmIbnuyMSpAxc"
+          >
+
+            <div class="song-number">
+              02
+            </div>
+
+            <div
+              class="song-icon"
+              aria-hidden="true"
+            >
+              📖
+            </div>
+
+            <div class="song-info">
+
+              <span class="song-label">
+                STORY SONG
+              </span>
+
+              <h3>
+                The Story We Remember
+              </h3>
+
+              <p>
+                by Hamza
+              </p>
+
+            </div>
+
+            <button
+              id="playStorySong"
+              class="song-play-button"
+              type="button"
+              data-song-id="story"
+              data-song-url="https://suno.com/s/hliMmIbnuyMSpAxc"
+            >
+              <span>▶</span>
+              Listen
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- BIRTHDAY FOOTER -->
+
+    <div class="birthday-footer">
+
+      <span>
+        ISABELLA OS
+      </span>
+
+      <span>
+        SEPTEMBER 19
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===================================================
+     MEMORY MODAL
+     =================================================== -->
+
+<div
+  id="memoryModal"
+  class="modal"
+  aria-hidden="true"
+>
+
+  <div class="modal-backdrop"></div>
+
+  <div
+    class="modal-card"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle"
+  >
+
+    <button
+      id="modalClose"
+      class="modal-close"
+      type="button"
+      aria-label="Close memory"
+    >
+      ×
+    </button>
+
+    <div class="modal-header">
+
+      <div
+        id="modalIcon"
+        class="modal-icon"
+      >
+        📸
+      </div>
+
+      <div>
+
+        <span
+          id="modalCategory"
+          class="modal-category"
+        >
+          MEMORY
+        </span>
+
+        <h2 id="modalTitle">
+          Memory
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div
+      id="modalImage"
+      class="modal-image"
+    >
+
+      <!--
+        This is the JavaScript-controlled modal image.
+        The memory card above already has its own HTML image.
+      -->
+
+      <img
+        id="modalMemoryImage"
+        src="images/ev6.jpg"
+        alt="Memory"
+      >
+
+    </div>
+
+
+    <div class="modal-body">
+
+      <p
+        id="modalText"
+        class="modal-text"
+      ></p>
+
+      <div
+        id="modalPlaceholder"
+        class="modal-placeholder"
+      >
+
+        <span>
+          🐻
+        </span>
+
+        <p>
+          Isabella is still looking
+          through the archive...
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="modal-footer">
+
+      <div class="modal-isabella">
+
+        <img
+          src="images/real isabella.png"
+          alt="Isabella"
+        >
+
+        <span>
+          Isabella remembers this.
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ===================================================
+     STORY MODAL
+     =================================================== -->
+
+<div
+  id="storyModal"
+  class="modal story-modal"
+  aria-hidden="true"
+>
+
+  <div class="modal-backdrop"></div>
+
+  <div
+    class="modal-card story-modal-card"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="storyTitle"
+  >
+
+    <button
+      id="storyModalClose"
+      class="modal-close"
+      type="button"
+      aria-label="Close story"
+    >
+      ×
+    </button>
+
+
+    <div class="story-file-header">
+
+      <span id="storyFileNumber">
+        FILE 01
+      </span>
+
+      <span>
+        ISABELLA ARCHIVE
+      </span>
+
+    </div>
+
+
+    <div
+      id="storyIcon"
+      class="story-modal-icon"
+    >
+      🌱
+    </div>
+
+
+    <span
+      id="storyCategory"
+      class="modal-category"
+    >
+      THE EARLY DAYS
+    </span>
+
+
+    <h2 id="storyTitle">
+      The Beginning
+    </h2>
+
+
+    <div class="story-modal-divider">
+
+      <span></span>
+      <span>✦</span>
+      <span></span>
+
+    </div>
+
+
+    <div
+      id="storyText"
+      class="story-modal-text"
+    ></div>
+
+
+    <div class="story-modal-isabella">
+
+      <img
+        src="images/Isabella image real.jpg"
+        alt="Isabella"
+      >
+
+      <div>
+
+        <span>
+          ARCHIVE NOTE
+        </span>
+
+        <p>
+          Some files are better read slowly.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ===================================================
+     ROOM OBJECT MODAL
+     =================================================== -->
+
+<div
+  id="roomObjectModal"
+  class="modal room-object-modal"
+  aria-hidden="true"
+>
+
+  <div class="modal-backdrop"></div>
+
+  <div
+    class="modal-card room-object-card"
+    role="dialog"
+    aria-modal="true"
+  >
+
+    <button
+      id="roomObjectClose"
+      class="modal-close"
+      type="button"
+      aria-label="Close"
+    >
+      ×
+    </button>
+
+
+    <div
+      id="roomObjectIcon"
+      class="room-object-modal-icon"
+    >
+      ✨
+    </div>
+
+
+    <span
+      id="roomObjectCategory"
+      class="modal-category"
+    >
+      ROOM OBJECT
+    </span>
+
+
+    <h2 id="roomObjectTitle">
+      Something
+    </h2>
+
+
+    <div
+      id="roomObjectContent"
+      class="room-object-content"
+    ></div>
+
+
+    <div class="room-object-isabella">
+
+      <img
+        src="images/real isabella.png"
+        alt="Isabella"
+      >
+
+      <p id="roomObjectIsabellaText">
+        Hmm... I wonder what you found.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ===================================================
+     TOAST
+     =================================================== -->
+
+<div
+  id="toast"
+  class="toast"
+  role="status"
+  aria-live="polite"
+>
+
+  <span class="toast-icon">
+    ✨
+  </span>
+
+  <span id="toastText">
+    Something happened.
+  </span>
+
+</div>
+
+
+<!-- ===================================================
+     VOICE STATUS
+     =================================================== -->
+
+<div
+  id="voiceStatus"
+  class="voice-status"
+  aria-live="polite"
+>
+
+  <span class="voice-status-dot"></span>
+
+  <span id="voiceStatusText">
+    Isabella is ready
+  </span>
+
+</div>
+
+
+</main>
+
+<script src="app.js" defer></script>
+
+</body>
+</html>
